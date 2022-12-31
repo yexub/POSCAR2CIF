@@ -12,9 +12,6 @@ except ImportError:
     strr=strr+"Or manually install from site:   https://spglib.github.io/spglib/"
     print(strr)
 
-from cif2pos import SymOpsHall
-
-
 element_symbols = [
     'X',
     'H', 'He',  # Period 1
