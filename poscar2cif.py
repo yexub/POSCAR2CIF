@@ -8194,6 +8194,7 @@ def writeCIF(cell, prec, basename):
     f.write("{0:<39}{1:.7g}\n".format('_cell_angle_alpha',alpha))
     f.write("{0:<39}{1:.7g}\n".format('_cell_angle_beta',beta))
     f.write("{0:<39}{1:.7g}\n".format('_cell_angle_gamma',gamma))
+    sg = num2sg[int(sgid)].replace(' ','')
     f.write("{0:<39}{1}\n".format('_symmetry_space_group_name_Hall',"'"+HM2Hall[sg]+"'"))
     f.write("{0:<39}{1}\n".format('_symmetry_space_group_name_H-M_alt',"'"+num2sg[int(sgid)]+"'"))
     f.write("{0:<39}{1}\n\n".format('_space_group_IT_number',sgid))
